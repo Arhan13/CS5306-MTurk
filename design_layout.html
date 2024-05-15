@@ -1,0 +1,289 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+  <crowd-instructions link-text="View instructions" link-type="button">
+    <short-summary>
+      <p>
+        Listen to each sound clip and select the option that best describes what
+        you hear.
+      </p>
+    </short-summary>
+
+    <detailed-instructions>
+      <h3>Instructions</h3>
+      <p>
+        Please use headphones to listen to the sound clips below. For each
+        sound, select the option that you think best describes the sound. Try to
+        be in a quiet environment to avoid background noise affecting your
+        judgment.
+      </p>
+    </detailed-instructions>
+  </crowd-instructions>
+
+  <!-- Sound 1 -->
+  <div>
+    <p>Sound 1:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/dog-barking.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of animal's sound is this?</p>
+    <label><input type="radio" name="sound1" value="A" required /> Cat</label
+    ><br />
+    <label><input type="radio" name="sound1" value="B" required /> Dog</label
+    ><br />
+    <label><input type="radio" name="sound1" value="C" required /> Horse</label
+    ><br />
+    <label><input type="radio" name="sound1" value="D" required /> Lion</label>
+  </div>
+
+  <!-- Repeat the block above for each sound, changing the 'name' and 'src' attributes accordingly -->
+
+  <div>
+    <p>Sound 2:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/Heavy-Rain-Falling-Off-Roof.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound2" value="A" required /> Wind
+      Blowing</label
+    ><br />
+    <label
+      ><input type="radio" name="sound2" value="B" required /> Rain
+      falling</label
+    ><br />
+    <label
+      ><input type="radio" name="sound2" value="C" required /> River
+      flowing</label
+    ><br />
+    <label
+      ><input type="radio" name="sound2" value="D" required /> Thunder</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 3:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/ringtone-205162.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound3" value="A" required /> Phone
+      ringing</label
+    ><br />
+    <label
+      ><input type="radio" name="sound3" value="B" required /> Alarm
+      clock</label
+    ><br />
+    <label
+      ><input type="radio" name="sound3" value="C" required /> Oven timer</label
+    ><br />
+    <label
+      ><input type="radio" name="sound3" value="D" required /> DoorBell</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 4:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/singing-club-of-birds_nature-soun.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound4" value="A" required /> Traffic
+      Noise</label
+    ><br />
+    <label
+      ><input type="radio" name="sound4" value="B" required /> Birds Chirping </label
+    ><br />
+    <label
+      ><input type="radio" name="sound4" value="C" required /> People
+      Taking</label
+    ><br />
+    <label
+      ><input type="radio" name="sound4" value="D" required /> Plane taking
+      off</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 5:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/knocking-on-door.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound5" value="A" required /> Door
+      Knocking</label
+    ><br />
+    <label
+      ><input type="radio" name="sound5" value="B" required /> Drum beats</label
+    ><br />
+    <label
+      ><input type="radio" name="sound5" value="C" required /> Hammer hitting
+      nails</label
+    ><br />
+    <label
+      ><input type="radio" name="sound5" value="D" required /> Car
+      starting</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 6:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/cats-meow-.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound6" value="A" required /> Dog
+      Barking</label
+    ><br />
+    <label
+      ><input type="radio" name="sound6" value="B" required /> Cat
+      Meowing</label
+    ><br />
+    <label
+      ><input type="radio" name="sound6" value="C" required /> Bird
+      Singing</label
+    ><br />
+    <label
+      ><input type="radio" name="sound6" value="D" required /> Mouse
+      Squeking</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 7:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/fog-horn-1-183967.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound7" value="A" required /> Train horn</label
+    ><br />
+    <label
+      ><input type="radio" name="sound7" value="B" required /> Whale call</label
+    ><br />
+    <label
+      ><input type="radio" name="sound7" value="C" required /> Fog horn</label
+    ><br />
+    <label
+      ><input type="radio" name="sound7" value="D" required /> Ship call</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 8:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/wind-in-canyon.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound8" value="A" required /> Wind whistling
+      through a building</label
+    ><br />
+    <label
+      ><input type="radio" name="sound8" value="B" required /> Airplane cabin
+      noise</label
+    ><br />
+    <label
+      ><input type="radio" name="sound8" value="C" required /> Wind in a
+      canyon</label
+    ><br />
+    <label
+      ><input type="radio" name="sound8" value="D" required /> Leaves rustling
+      in the wind</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 9:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/geiger-2.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound9" value="A" required /> Static on
+      TV</label
+    ><br />
+    <label
+      ><input type="radio" name="sound9" value="B" required /> Rain on a tin
+      roof</label
+    ><br />
+    <label
+      ><input type="radio" name="sound9" value="C" required /> Geiger
+      counter</label
+    ><br />
+    <label
+      ><input type="radio" name="sound9" value="D" required /> Electronic motor
+      running</label
+    >
+  </div>
+
+  <div>
+    <p>Sound 10:</p>
+    <audio controls>
+      <source
+        src="https://crowdsourcingp3.s3.us-east-2.amazonaws.com/ice-break.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What type of sound is this?</p>
+    <label
+      ><input type="radio" name="sound10" value="A" required />Glass
+      breaking</label
+    ><br />
+    <label
+      ><input type="radio" name="sound10" value="B" required />Branch
+      snapping</label
+    ><br />
+    <label
+      ><input type="radio" name="sound10" value="C" required />Ice
+      cracking</label
+    ><br />
+    <label
+      ><input type="radio" name="sound10" value="D" required />Paper
+      tearing</label
+    >
+  </div>
+</crowd-form>
